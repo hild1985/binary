@@ -1,13 +1,12 @@
 package controllers
 
 import "github.com/revel/revel"
-import "labix.org/v2/mgo"
+import "gopkg.in/mgo.v2"
 
 type App struct {
 	*revel.Controller
 }
 
-func (c App) Index() revel.Result {	
-	//db = connect("192.168.59.103:27017/myDatabase")
+func (c App) Index() revel.Result {
 	return c.Render()
 }
