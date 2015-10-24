@@ -1,7 +1,11 @@
 package controllers
 
-import "github.com/revel/revel"
-import "gopkg.in/mgo.v2"
+import (
+        "fmt"
+		"log"
+        "gopkg.in/mgo.v2"
+        "gopkg.in/mgo.v2/bson"
+)
 
 type App struct {
 	*revel.Controller
